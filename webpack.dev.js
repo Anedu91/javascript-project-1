@@ -33,11 +33,24 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(jpg|png|gif|jpeg)/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "static",
+              useRelativePath: true,
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/views/index.html",
+      template: "./src/index.html",
       filename: "./index.html",
     }),
     new MiniCssExtractPlugin({

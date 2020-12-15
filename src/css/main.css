@@ -3,3 +3,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#cardContainer > * {
+  @apply flex flex-col items-center  p-5  text-center  border border-gray-700 rounded-lg shadow-md;
+}
+
+.center {
+  @apply col-start-2 row-start-2;
+}
