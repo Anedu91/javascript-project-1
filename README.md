@@ -9,7 +9,9 @@ Also, the project was config with Webpack. Find the cli below.
 ## Commands
 
 -"npm run build-dev" => Development environment
+
 -"npm run build-server" => Development Front-end server
+
 -"npm run build-prod" => Production environment
 
 ## Specifications
